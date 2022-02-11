@@ -1,0 +1,9 @@
+.news-section__header {
+    margin-bottom: 48px;
+}
+
+.news-section__content {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(280px, 1fr) );
+    gap: 32px;
+}

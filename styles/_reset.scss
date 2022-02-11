@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+
+    background-color: transparent;
+    border: 0;
+}
+
+body {
+    font-family: $font-family-primary;
+    color: #222222;
+}
+ 
+button:not( :disabled ) {
+    cursor: pointer;
+}

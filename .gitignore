@@ -1,0 +1,7 @@
+.next
+next-env.d.ts
+
+tsconfig.json
+
+package-lock.json
+node_modules

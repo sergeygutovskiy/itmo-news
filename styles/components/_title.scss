@@ -1,0 +1,13 @@
+.title {
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25em;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        overflow-wrap: anywhere;
+        font-size: 32px;
+    }
+}

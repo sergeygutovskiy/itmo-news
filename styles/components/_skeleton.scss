@@ -1,0 +1,36 @@
+.skeleton-items {
+    --spacing: 1em;
+
+    margin: calc(var(--spacing) / -2);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.skeleton-item {
+    position: relative;
+    margin: calc(var(--spacing) / 2);
+
+    height: 1em;
+
+    &.w-1-1 { flex-basis: calc(100% - var(--spacing)); }
+    &.w-1-4 { flex-basis: calc(25%  - var(--spacing)); }
+
+    background-color: #f1f1f1;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+        animation: load 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes load {
+        from { transform:translateX(-100%); }
+        to { transform:translateX(100%); }
+    }
+}

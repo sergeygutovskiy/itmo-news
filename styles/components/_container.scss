@@ -1,0 +1,22 @@
+.container {
+    --paddding: 128px;
+
+    margin: 0 auto;
+
+    max-width: calc(1200px + var(--paddding) * 2);
+    width: 100%;
+    
+    padding: 0 var(--paddding);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        --paddding: 64px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        --paddding: 24px;
+    }
+}

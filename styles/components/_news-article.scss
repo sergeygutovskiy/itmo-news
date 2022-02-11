@@ -8,7 +8,14 @@
 
 .news-article__image-wrapper {
     position: relative;
-    aspect-ratio: 382 / 224;
+    
+    @supports (aspect-ratio: 382 / 224) {
+        aspect-ratio: 382 / 224;
+    }
+
+    @supports not (aspect-ratio: 382 / 224) {
+        height: 300px;
+    } 
 
     .skeleton-item {
         height: 100%;
